@@ -1,0 +1,57 @@
+// CSS Variables
+// :root artinya semua elemen yang ada di dalam html-nya akan punya akses ke variable ini(variable yang ada di dalam :root)
+// :root {
+// 	--primary-color: #f4f1de;
+// 	--secondary-color: #f2cc8f;
+// 	--text-color: #e07a5f;
+// }
+
+// body {
+// 	background-color: var(--primary-color);
+// }
+
+// h1 {
+// 	color: var(--text-color);
+// }
+
+// p {
+// 	color: var(--text-color);
+// }
+
+// SASS Variables
+// Variable Global
+// bisa diakses oleh elemen manapun
+// $secondary-color: #f2cc8f;
+// $text-color: #e07a5f;
+// $primary-color: green;
+
+// body {
+// 	// Variable Local
+// 	// hanya bisa diakses atau dipake di dalam elemen tertentu saja
+// 	// yang bisa akses atau pake hanya elemen body beserta elemen turunannya
+// 	// kalo bikin nesting berarti itu bisa dipake
+// 	// $primary-color: #f4f1de;
+// 	// di bawah membuat variable local menjadi variable global yang bisa diakses oleh elemen manapun
+// 	$primary-color: #f4f1de !global;
+// 	background-color: $primary-color;
+// 	// sama dengan
+// 	// background-color: $primary_color;
+// 	// dan tetap akan mengacu ke variable $primary-color, jadi -(dash) dan _(underscore) dianggap sama di SASS
+// }
+
+// h1 {
+// 	color: $primary-color;
+// }
+
+// Map
+// $alert-danger: red;
+// $alert-success: green;
+// $alert-warning: orange;
+// sama dengan
+$alert: ('danger': red,
+	'success': green,
+	'warning': orange);
+
+h1 {
+	color: map-get($alert, 'success');
+}

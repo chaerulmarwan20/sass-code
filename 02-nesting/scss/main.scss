@@ -1,0 +1,88 @@
+// .main {
+// 	background-color: lightblue;
+
+// 	.main-heading {
+// 		font-size: 2em;
+// 	}
+
+// 	.main-paragraph {
+// 		font-size: 1.4em;
+// 	}
+// }
+
+// .main,
+// footer {
+
+// 	h1,
+// 	p {
+// 		letter-spacing: 1px;
+// 	}
+// }
+
+// &
+// Parent Selector
+// .main {
+// 	// & di bawah mengacu ke .main
+// 	.container & {
+// 		background-color: lightblue;
+// 	}
+
+// 	.main-heading {
+// 		font-size: 2em;
+// 	}
+
+// 	// & di bawah mengacu ke .main
+// 	&:hover {
+// 		background-color: salmon;
+// 	}
+// }
+
+// .main {
+// 	// &(pertama) dan &(kedua) mengacu ke .main
+// 	& &-heading {
+// 		font-size: 2em;
+// 	}
+
+// 	// &(pertama) dan &(kedua) mengacu ke .main
+// 	& &-paragraph {
+// 		font-size: 1.4em;
+// 	}
+// }
+
+// .footer {
+// 	// &(pertama) dan &(kedua) mengacu ke .footer
+// 	& &-heading {
+// 		font-size: 2em;
+// 	}
+
+// 	// &(pertama) dan &(kedua) mengacu ke .footer
+// 	& &-paragraph {
+// 		font-size: 1.4em;
+// 	}
+// }
+// sama dengan
+.main {
+
+	// #{&}-heading = .main .main-heading
+	#{&}-heading {
+		font-size: 2em;
+	}
+
+	// #{&}-paragraph = .main .main-paragraph
+	#{&}-paragraph {
+		font-size: 1.4em;
+	}
+}
+
+.footer {
+
+	// #{&}-heading = .footer .footer-heading
+	#{&}-heading {
+		font-size: 2em;
+	}
+
+	// #{&}-paragraph = .footer .footer-paragraph
+	#{&}-paragraph {
+		font-size: 1.4em;
+	}
+}
