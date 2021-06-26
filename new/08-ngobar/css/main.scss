@@ -51,6 +51,7 @@ body::before {
   text-decoration: none;
   border: 1px solid transparent;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button:hover {
   color: #f35ca3;

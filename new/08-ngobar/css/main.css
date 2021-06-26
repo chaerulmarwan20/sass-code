@@ -59,6 +59,7 @@ body::before {
   border: 1px solid transparent;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button:hover {

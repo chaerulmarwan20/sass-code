@@ -61,6 +61,7 @@ body {
           @include m.tombol;
           border: 1px solid transparent;
           transition: 0.5s ease;
+          cursor: pointer;
 
           &:hover {
             color: v.$primaryColor;
